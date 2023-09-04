@@ -1,0 +1,11 @@
+name: Algoritimo de impressão de dados
+type: dart
+steps:
+  - name: Step 1
+    directory: step_01
+  - name: Step 2
+    directory: step_02
+    has_solution: true
+  - name: Step 3
+    directory: step_03
+    has_solution: true
