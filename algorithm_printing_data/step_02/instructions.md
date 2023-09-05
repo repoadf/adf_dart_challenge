@@ -1,4 +1,4 @@
-# Algoritimo de impressão
+# Algoritmo de impressão
 
 ## Motivação
 
