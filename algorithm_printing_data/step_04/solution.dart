@@ -1,5 +1,5 @@
 void main() {
-  final students = [
+  final [fields, ...students] = [
     [
       "id",
       "nome",
@@ -34,15 +34,9 @@ void main() {
       "Jornada Full Stack"
     ]
   ];
-  late List<dynamic> fields;
 
-  for (var (index, data) in students.indexed) {
-    if (index == 0) {
-      fields = data;
-      continue;
-    }
-
-    for (final (index, value) in data.indexed) {
+   for (var student in students) {
+    for (var (index, value) in student.indexed) {
       print('${fields[index]}: $value');
     }
     print('');

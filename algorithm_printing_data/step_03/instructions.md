@@ -2,59 +2,17 @@
 
 ## Motivação
 
-Estava eu construindo um script para encontrar os alunos na qual estão próximo de expiração da ADF e com isso precisava faze a leitura de diversos csv. 
-Lendo os arquivos exportados das plataformas identifiquei os arquivos tinham um padrão que após a leitura seria dividido em 2 partes: 
+Estava desenvolvendo um script para identificar alunos que estão próximos da expiração da ADF e, para isso, precisei realizar a leitura de vários arquivos CSV. 
+
+Durante a análise dos arquivos exportados das plataformas, observei que eles seguiam um padrão que, após a leitura, poderia ser dividido em duas partes:
 
     - linha 1 Cabeçalho;
     - linha 2 em diante vinham os dados;
 
-## Fases 2 (Construção usando alguns recursos do dart 3)
-
 
 ## Desafio
 
-Dados a lista abaixo: 
-
-```dart
- final students = [
-    [
-      "id",
-      "nome",
-      "email",
-      "cpf",
-      "celular",
-      "criado_em",
-      "primeiro_acesso_em",
-      "ultimo_acesso_em",
-      "tags"
-    ],
-    [
-      6227660,
-      "Carlos ADF 2",
-      "carlosADF@gmail.com",
-      "000.010.000-00",
-      1234567891011,
-      "06/02/2023 16:28",
-      "06/02/2023 19:09",
-      "20/02/2023 20:30",
-      "Jornada Full Stack"
-    ],
-    [
-      8536595,
-      "Marcus ADF 3",
-      "marcusadf@gmail.com",
-      "000.123.456-77",
-      9876543211011,
-      "16/05/2023 13:15",
-      "16/05/2023 15:44",
-      "04/09/2023 10:16",
-      "Jornada Full Stack"
-    ]
-  ];
-```
-
-
-Gostaria que você faça a impressão dos dados de cada um dos dados mostrando o campo: valor para cada uma das linhas, ignorando o cabeçalho ex:
+Por favor, realize a impressão dos dados de cada linha do array alunos, exibindo o campo: valor para cada uma delas, ignorando o cabeçalho, conforme o exemplo abaixo:
 
 ```
 id: 6227660
@@ -68,8 +26,22 @@ ultimo_acesso_em: 20/02/2023 20:30
 tags: Jornada Full Stack
 ```
 
+## Estudo
+Com o Dart 3 foram adicionados algumas extensions em Iterable (nonNulls, firstOrNull, lastOrNull, singleOrNull, elementAtOrNull e **indexed**)
+
+indexed é um recurso bem interessante que traz a possibilidade de em um loop do tipo for você receber um record com index e o objeto ex: 
+
+```dart
+var listaNomes = ['Rodrigo'];
+
+for(final (index, value) in listaNomes.indexed){
+  print('$index = $value');
+}
+```
+
+Pensando nisso agora construa o mesmo recurso criado no passo anterior porém utilizando esse novo recurso do Dart 3
+
 
 ## ATENÇÃO
-* Eu gostaria que você utiliza-se os dados do cabeçalho e não colocar o campo fixo tudo bem?
-* Utilize a forma de construção sem utilizar nada do **Dart 3 (Destructions,pattern matching ou algo do tipo)**
-
+1. Nessa fase do desafio você deve utilizar o recurso de indexed adicionado no Dart 3
+1. Eu gostaria que você utiliza-se os dados do cabeçalho e não colocar o campo fixo tudo bem?

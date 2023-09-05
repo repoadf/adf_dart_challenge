@@ -34,17 +34,4 @@ void main() {
       "Jornada Full Stack"
     ]
   ];
-  late List<dynamic> fields;
-
-  for (var (index, data) in students.indexed) {
-    if (index == 0) {
-      fields = data;
-      continue;
-    }
-
-    for (final (index, value) in data.indexed) {
-      print('${fields[index]}: $value');
-    }
-    print('');
-  }
 }

@@ -26,7 +26,30 @@ ultimo_acesso_em: 20/02/2023 20:30
 tags: Jornada Full Stack
 ```
 
+## Estudo
+Com o Dart 3 foram adicionados um recurso de destructions onde você pode extrair dados de uma variavel evitando a criação de variáveis desnecessárias
+
+```dart
+var [primeiro, segundo, ...resto] = ['Rodrigo', 'Rahman', 'Almeida', 'Academia', 'do', 'Flutter'];
+```
+
+Se fosse antes do dart 3 para extrair esse array teriamos que fazer assim:
+
+```dart
+var lista = ['Rodrigo', 'Rahman', 'Almeida', 'Academia', 'do', 'Flutter'];
+
+var primeiro = lista.removeAt(0);
+var segundo = lista.removeAt(0);
+var resto = lista;
+
+print(primeiro);
+print(segundo);
+print(resto);
+```
+
+Pensando nisso agora construa o mesmo recurso criado no passo anterior porém utilizando tudo que o **Dart 3** pode te propor 
+
 
 ## ATENÇÃO
-1. Nessa fase do desafio você deve construir utilizando dart **ANTES** da **Versão 3 NÃO UTILIZE(Destructions,pattern matching ou algo do tipo)**
+1. Nessa fase do desafio você deve utilizar todos os recursos no Dart 3
 1. Eu gostaria que você utiliza-se os dados do cabeçalho e não colocar o campo fixo tudo bem?
