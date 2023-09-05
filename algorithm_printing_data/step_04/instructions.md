@@ -27,7 +27,7 @@ tags: Jornada Full Stack
 ```
 
 ## Estudo
-Com o Dart 3 foram adicionados um recurso de destructions onde você pode extrair dados de uma variavel evitando a criação de variáveis desnecessárias
+Com o Dart 3 foram adicionados um recurso de object destructuring onde você pode extrair dados de uma variavel evitando a criação de variáveis desnecessárias
 
 ```dart
 var [primeiro, segundo, ...resto] = ['Rodrigo', 'Rahman', 'Almeida', 'Academia', 'do', 'Flutter'];

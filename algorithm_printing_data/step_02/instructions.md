@@ -28,5 +28,5 @@ tags: Jornada Full Stack
 
 
 ## ATENÇÃO
-1. Nessa fase do desafio você deve construir utilizando dart **ANTES** da **Versão 3 NÃO UTILIZE(Destructions,pattern matching ou algo do tipo)**
+1. Nessa fase do desafio você deve construir utilizando dart **ANTES** da **Versão 3 NÃO UTILIZE(destructuring, pattern matching ou algo do tipo)**
 1. Eu gostaria que você utiliza-se os dados do cabeçalho e não colocar o campo fixo tudo bem?
