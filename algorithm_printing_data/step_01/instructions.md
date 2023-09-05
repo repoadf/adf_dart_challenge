@@ -32,3 +32,5 @@ primeiro_acesso_em: 06/02/2023 19:09
 ultimo_acesso_em: 20/02/2023 20:30
 tags: Jornada Full Stack
 ```
+
+## Clique em **>** ao lado de Step 1 para ir para primeira fase do desafio
